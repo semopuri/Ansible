@@ -1,0 +1,17 @@
+[tag_ansibleNodeType_bastion]
+
+[tag_ansibleNodeType_worker]
+
+[tag_ansibleNodeType_AMI]
+
+[tag_ansibleNodeType_TEST]
+
+
+[test:children]
+tag_ansibleNodeType_TEST
+
+[bastion:children]
+tag_ansibleNodeType_bastion
+
+[worker:children]
+tag_ansibleNodeType_worker
